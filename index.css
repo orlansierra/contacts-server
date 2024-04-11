@@ -1,0 +1,270 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgb(207, 255, 223), rgb(148, 198, 255));
+  overflow: hidden;
+}
+#form {
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+li {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+      margin-left: 2%;
+    margin-right: 2%;
+}
+#container{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(64, 75, 97);
+
+  
+}
+main{
+  width: 70%;
+}
+
+.delete-btn > .delete-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.edit-btn > .edit-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.info {
+  display: none;
+}
+
+input {
+  outline: none;
+}
+
+.correct {
+  outline: 2px solid green;
+}
+
+.incorrect {
+  outline: 2px solid red;
+}
+
+.show-info {
+  display: block;
+}
+
+
+
+ul {
+  padding-left: 0;
+  min-height: 5rem;
+  max-height: 10rem;
+  overflow: auto;
+}
+input[type="text"] {
+  width: 86%;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  background-color: #84c5d7;
+  margin-left: 5px
+  
+}
+#form-btn {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #278b5c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top:10px ;
+  display: flex;
+}
+
+
+.delete-btn{
+  padding: 8px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.edit-btn{
+  padding: 8px;
+  background-color: #46a00a;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+
+}
+
+p {
+  display: flex;
+  width: 100%;
+  text-align: justify;
+  color: rgb(164, 180, 255);
+  overflow: hidden;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#input-btn{
+  background-color: transparent;
+  border: none;
+}
+#svg-user{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  color: rgb(213, 216, 252);
+
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(178, 201, 255);
+}
+label{
+ color: rgb(197, 217, 255);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ padding-left: 10px;
+}
+
+.jeje {
+  background-color: rgb(42 56 85);
+}
+.div-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media  (min-width: 320px) {
+
+main {
+  width: 85%;
+}
+p{
+  font-size: 75%;
+}
+.delete-btn{
+  padding: 3px;
+}
+.edit-btn{
+  padding: 3px;
+}
+h2 {
+  font-size: 131%;
+}
+  input[type="text"]{
+    margin-left: 12px
+  }
+  
+}
+@media (min-width:425px) {
+  p{
+    font-size: 100%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  input[type="text"]{
+    margin-left: 5px
+  }
+  
+
+}
+@media (min-width:525px) {
+  main{
+    width: 85%;
+  }
+  p{
+    font-size: 100%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  input[type="text"]{
+    margin-left: 5px
+  }
+  .delete-btn{
+    padding: 6px;
+  }
+  .edit-btn{
+    padding: 6px;
+  }
+
+}
+@media (min-width:768px) {
+  main{
+    width: 85%;
+  }
+  p{
+    font-size: 100%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  input[type="text"]{
+    margin-left: 5px
+  }
+  .delete-btn{
+    padding: 6px;
+  }
+  .edit-btn{
+    padding: 6px;
+  }
+  input[type="text"]{
+    margin-left: 5px,;
+    width: 90% ;
+  }
+  #form-btn {
+    font-size: 19px;
+}
+}
+@media (min-width:1005px) {
+  main{
+    width: 60%;
+  }
+  input[type="text"]{
+    margin-left: 5px,;
+    width: 91.5% ;
+  }
+  h2 {
+    font-size: 180%;
+  }
+  @media (min-width:1440px) {
+    main{
+      width: 55%;
+    }
+    input[type="text"]{
+      margin-left: 5px,;
+      width: 93% ;
+    }
+    h2 {
+      font-size: 190%;
+    }
+  }
+}
