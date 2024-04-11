@@ -22,7 +22,6 @@ let contacts = [];
 const validateInput = (input, validation) => {
   const infoText = input.parentElement.parentElement.children[2];
   console.log(input.parentElement.parentElement);
-  console.log(infoText);
   if (input.value === '') {
     input.classList.remove('correct');
     input.classList.remove('incorrect');
@@ -41,6 +40,19 @@ const validateInput = (input, validation) => {
     formBtn.disabled = false;
   } else {
     formBtn.disabled = true;
+  }
+};
+
+const EditvalidateInput = (p, validation) => {
+  if (p.innerHTML === '') {
+    p.classList.remove('correct');
+    p.classList.remove('incorrect');
+  } else if (validation) {
+    p.classList.add('correct');
+    p.classList.remove('incorrect')
+  } else {
+    p.classList.add('incorrect');
+    p.classList.remove('correct');
   }
 };
 
@@ -175,7 +187,7 @@ list.addEventListener('click', e => {
       `;
       nameEdit.addEventListener('input', e => {
         editNameValidation = REGEX_NAME.test(nameEdit.innerHTML);
-        validateInput(nameEdit, editNameValidation)
+        EditvalidateInput(nameEdit, editNameValidation)
         if (editNameValidation && editNumValidation) {
           editBtn.disabled = false;
         } else {
@@ -184,7 +196,7 @@ list.addEventListener('click', e => {
       });
       numberEdit.addEventListener('input', e => {
         editNumValidation = REGEX_NUMBER.test(numberEdit.innerHTML);
-        validateInput(numberEdit, editNumValidation);
+        EditvalidateInput(numberEdit, editNumValidation);
         if (editNameValidation && editNumValidation) {
           editBtn.disabled = false;
         } else {
