@@ -20,18 +20,19 @@ let contacts = [];
 
 // Functions
 const validateInput = (input, validation) => {
-  const infoText = input.parentElement.children[2];
+  const infoText = input.parentElement.parentElement.children[2];
+  console.log(input.parentElement.parentElement);
   console.log(infoText);
   if (input.value === '') {
     input.classList.remove('correct');
     input.classList.remove('incorrect');
-
+    infoText.classList.remove('show-info');
   } else if (validation) {
     input.classList.add('correct');
     input.classList.remove('incorrect');
-  
+    infoText.classList.remove('show-info');
   } else {
-  
+    infoText.classList.add('show-info');
     input.classList.add('incorrect');
     input.classList.remove('correct');
   }
@@ -42,6 +43,7 @@ const validateInput = (input, validation) => {
     formBtn.disabled = true;
   }
 };
+
 
 const renderContacts = () => {
   list.innerHTML = '';

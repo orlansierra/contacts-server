@@ -159,6 +159,11 @@ label{
   display: flex;
   justify-content: center;
 }
+p.show-info {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
 
 
 @media  (min-width: 320px) {
