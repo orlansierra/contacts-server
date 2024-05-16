@@ -21,12 +21,12 @@ body {
 
   
 }
-li {
+.li {
   display: flex;
   justify-content: center;
   padding: 2px;
-      margin-left: 2%;
-    margin-right: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 #container{
   display: flex;
@@ -164,7 +164,25 @@ p.show-info {
   display: flex;
   justify-content: center;
 }
+#cerrar-btn{
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #278b5c;
+  color: #eef2ff;
+  display: flex;
+  align-items: center;
 
+}
+#btn{
+  display: flex;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  height: 5rem;
+  background-color: rgb(64, 75, 97);
+  width: 100%;
+}
 
 @media  (min-width: 320px) {
 
